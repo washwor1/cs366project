@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>
+        Login - Technic Platform
+    </title>
+    <link href="css/urmom.css" rel="stylesheet">
+    <script src="https://use.typekit.net/ylr0rpe.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+    <script src="https://use.fontawesome.com/6fc104a355.js"></script>
+    <meta name="csrf-token" content="CcwZVc2pXMHrrsMPi5pojPP0fNYq9ODLHmvJd8oJ">
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://www.technicpack.net/dashboard"><i class="fa fa-rss"></i> Dashboard</a></li>
+                    <li>
+                        <a href="https://www.technicpack.net/modpacks"><i class="fa fa-compass"></i> Modpacks</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://www.technicpack.net/community" class="dropdown-toggle"
+                            data-toggle="dropdown"><i class="fa fa-users"></i> Community <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.technicpack.net/community">Community Feed</a></li>
+                            <li><a href="https://www.technicpack.net/news">Technic News</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://discord.gg/technic" target="_blank">Chat on Discord</a></li>
+                            <li><a href="https://forums.technicpack.net">Forums</a></li>
+                            <li><a href="https://support.technicpack.net">Guides &amp; Support</a></li>
+                            <li><a href="https://status.technicpack.net" target="_blank">Technic Status</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="download.html"><i class="fa fa-download"></i> Download</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-user">
+                    <li class="register"><a href="https://www.technicpack.net/register"><i
+                                class="fa fa-plus-square"></i> Register</a>
+                    <li class="signin"><a href="login.html"><i class="fa fa-sign-in"></i> Sign
+                            In</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop backdrop-login"></div>
+    <div class="container content-area login-area">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <h1>Login</h1>
+            <div class="login-form all-form">
+                <form role="form" action="https://www.technicpack.net/login" method="post">
+                    <input type="hidden" name="_token" value="CcwZVc2pXMHrrsMPi5pojPP0fNYq9ODLHmvJd8oJ">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password"
+                            placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="verify_code">6-digit 2FA code <small>(if using 2FA)</small></label>
+                        <input type="text" inputmode="numeric" pattern="[0-9]*" autocomplete="one-time-code"
+                            class="form-control" name="verify_code" id="verify_code" placeholder="000 000">
+                        <a href="https://www.technicpack.net/tfa/remove"><small>Emergency Authenticator
+                                Removal</small></a>
+                    </div>
+                    
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="remember"> Remember Me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <a href="https://www.technicpack.net/register" class="btn btn-default">Create an Account</a>
+                    <a href="https://www.technicpack.net/password/reset" class="btn">Lost your password?</a>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <footer>
+        <div class="container copyright">
+            <div class="col-md-8">
+                <ul class="footer-nav list-inline">
+                    <li><a href="https://www.technicpack.net/home">technicpack.net<span class="lighter">/home</span></a>
+                    </li>
+                    <li><a href="https://www.technicpack.net/about-us">About Technic</a></li>
+                    <li><a href="https://www.technicpack.net/help">Help</a></li>
+                    <li><a href="https://www.technicpack.net/privacy">Privacy Policy</a></li>
+                    <li><a href="https://www.technicpack.net/terms">Terms of Service</a></li>
+                    <li><a href="https://www.technicpack.net/contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 copyright-text">
+                <p>Copyright &copy; Syndicate LLC 2022. All Rights Reserved.<br>
+                    <a href="https://status.technicpack.net" target="_blank">Technic Status</a> - Technic Platform <a
+                        href="https://www.technicpack.net/platform-changelog">v2.4.0</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="js/urmom.js"></script>
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+
+        });
+    </script>
+    
+</body>
+
+</html>
